@@ -1,0 +1,6 @@
+// Creo clase atuendo como fabrica de Atuendos
+// Como usuario de QuéMePongo, quiero poder cargar prendas válidas para generar atuendos con ellas.
+
+// Accesorios --> gorra,anteojos,pañuelo verde, bufanda,
+// Parte superior --> camisa, musculosa, remera de mangas largas, remera manga corta
+// Parte inferior --> zapatos, crocs, zapatillas
