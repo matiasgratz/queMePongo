@@ -20,24 +20,14 @@ public class Prenda {
     if (categoria == null){
         throw new RuntimeException("La prenda debe tener un categoria");
     }
-    if (colorPrincipal == null){
-        throw new RuntimeException("La prenda debe tener un color principal");
-      }
-
-
+    if (colorPrincipal == null) {
+      throw new RuntimeException("La prenda debe tener un color principal");
+    }
   }
 
+// Falta
+  // Como usuarie de QuéMePongo, quiero evitar que haya prendas cuya categoría no se condiga con su tipo. (Ej, una remera no puede ser calzado).
 
-
-  // Como usuarie de QuéMePongo, quiero evitar que haya prendas sin tipo, tela, categoría o color primario.
-    // Como usuarie de QuéMePongo, quiero evitar que haya prendas cuya categoría no se condiga con su tipo.
-    // (Ej, una remera no puede ser calzado).
-    /*
-     void cargarPrenda(
-      if (tipo == NULL) {
-      throw UserException("No se ha cargado el tipo de la prenda")
-  }
-     */
 
 
 
