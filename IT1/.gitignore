@@ -27,4 +27,4 @@ target/**
 
 # IJ files
 *.iml
-.idea/**
+.idea/vcs.xml
