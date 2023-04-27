@@ -1,32 +1,25 @@
 public class Prenda {
-  String tipo; // (zapatos, camisa de mangas cortas, pantalón, etc).
-  Categoria categoria; // (parte superior, calzado, parte inferior, accesorios).
-  String material;
-  String colorPrincipal;
-  String colorSecundario;
+  TipoDePrenda tipoDePrenda;
+  Categoria categoria;
+  Material material;
+  Color color;
 
-  public Prenda(String tipo, Categoria categoria, String material, String colorPrincipal, String colorSecundario){
-    this.tipo = tipo;
-    this.categoria = categoria;
-    this.material = material;
-    this.colorPrincipal = colorPrincipal;
-    this.colorSecundario = colorSecundario;
-    if (tipo == null){
-        throw new RuntimeException("La prenda debe tener un tipo");
-    }
-    if (material == null){
-        throw new RuntimeException("La prenda debe tener un material");
-    }
-    if (categoria == null){
-        throw new RuntimeException("La prenda debe tener un categoria");
-    }
-    if (colorPrincipal == null) {
-      throw new RuntimeException("La prenda debe tener un color principal");
-    }
+  Color colorOpcional;
+
+  public Prenda(TipoDePrenda  tipoDePrenda, Material material, Color color){
+    this.TipoDePrenda  = tipoDePrenda;
+    this.Categoria = categoria;
+    this.Material = material;
+    this.Color = color;
+    this.tipoDePrenda = requireNonNull(tipo, "tipo de prenda es obligatorio");
+    this.material = requireNonNull(material, "material es obligatorio");
+    this.color = requireNonNull(color, "color es obligatorio");
   }
 
-// Falta
-  // Como usuarie de QuéMePongo, quiero evitar que haya prendas cuya categoría no se condiga con su tipo. (Ej, una remera no puede ser calzado).
+  public void setColorOpcional(Color colorOpcional)
+  {
+  this.colorOpcional = colorOpcional;
+  }
 
 
 
