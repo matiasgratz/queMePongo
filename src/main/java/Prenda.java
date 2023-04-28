@@ -3,7 +3,6 @@ public class Prenda {
   Categoria categoria;
   Material material;
   Color color;
-
   Color colorOpcional;
 
   public Prenda(TipoDePrenda  tipoDePrenda, Material material, Color color){
@@ -20,14 +19,6 @@ public class Prenda {
   {
   this.colorOpcional = colorOpcional;
   }
-
-
-
-
-
-
-
-
 
 }
 
