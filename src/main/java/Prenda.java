@@ -5,9 +5,8 @@ public class Prenda {
   Color color;
   Color colorOpcional;
 
-  public Prenda(TipoDePrenda  tipoDePrenda, Material material, Color color){
-    this.TipoDePrenda  = tipoDePrenda;
-    this.Categoria = categoria;
+  public Prenda(TipoDePrenda  categoria, Material material, Color color){
+    this.TipoDePrenda  = categoria;
     this.Material = material;
     this.Color = color;
     this.tipoDePrenda = requireNonNull(tipo, "tipo de prenda es obligatorio");
